@@ -1,0 +1,48 @@
+{
+  "name": "bomparse",
+  "version": "0.0.0",
+  "description": "A tool to parse BOM lists",
+  "author": "Anand Suresh",
+  "license": "MIT",
+  "bin": "bin/bomparse.js",
+  "main": "lib/parser.js",
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "clean-all": "rm -rf node_modules package-lock.json",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "mocha spec"
+  },
+  "dependencies": {
+    "yargs": "15.3.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "7.1.1",
+    "standard": "14.3.3"
+  },
+  "mocha": {
+    "diff": true,
+    "extension": [
+      "js"
+    ],
+    "package": "./package.json",
+    "reporter": "spec",
+    "slow": 75,
+    "timeout": 2000,
+    "ui": "bdd",
+    "watch-files": [
+      "lib/**/*.js",
+      "spec/**/*.js"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "doc"
+    ],
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
+}

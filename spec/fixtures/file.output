@@ -1,0 +1,22 @@
+[
+  {
+    "MPN": "40001",
+    "Manufacturer": "Keystone",
+    "ReferenceDesignators": [
+      "Z1",
+      "Z3",
+      "Z8"
+    ],
+    "NumOccurrences": 2
+  },
+  {
+    "MPN": "AXXX-1000",
+    "Manufacturer": "Panasonic",
+    "ReferenceDesignators": [
+      "D1",
+      "D8",
+      "D9"
+    ],
+    "NumOccurrences": 1
+  }
+]
